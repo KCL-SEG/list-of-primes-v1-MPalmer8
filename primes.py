@@ -1,9 +1,10 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
+import math
 
 def numIsPrime(n):
-    for num in range(2,upper):
-        if upper%num == 0:
+    for num in range(2,int(math.sqrt(n))+1):
+        if n%num == 0:
             return False
     return True
 
